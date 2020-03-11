@@ -1,0 +1,10 @@
+# Intellij IDEA
+.idea/
+*.iml
+
+# npm
+node_modules/
+package-lock.json
+
+# discord.js
+.env
