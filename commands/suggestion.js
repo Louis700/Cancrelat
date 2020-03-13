@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 exports.run = (client, message, args) => {
-	if (message.channel.id !== "686696183623843894") {
+	if (message.channel.id !== client.settings.suggestionChannel) {
 		message.channel.send(
 			new Discord.MessageEmbed()
 				.setColor("#F44336")
