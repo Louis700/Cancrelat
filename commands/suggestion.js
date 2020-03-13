@@ -47,7 +47,10 @@ exports.run = (client, message, args) => {
 			.setAuthor(message.author.username, message.author.avatarURL())
 			.setDescription(suggestion)
 			.setTimestamp()
-	);
+	).then((msg) => {
+		msg.react("✅");
+		msg.react("❎");
+	});
 
 	message.delete();
 };
