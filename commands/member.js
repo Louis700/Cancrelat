@@ -40,4 +40,6 @@ exports.run = (client, message, args) => {
 	}
 
 	message.mentions.members.first().roles.add(client.settings.memberRole);
+
+	message.delete();
 };
