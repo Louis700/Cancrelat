@@ -1,4 +1,9 @@
 {
 	"prefix": ";",
-	"suggestionChannel": "686696183623843894"
+	"memberRole": "686692771792552024",
+	"suggestionChannel": "686696183623843894",
+	"rolesAllowedToValidateAMember": [
+		"686692215468195855",
+		"687065093703335936"
+	]
 }
