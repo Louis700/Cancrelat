@@ -1,5 +1,8 @@
 const Discord = require("discord.js");
 
+exports.help = "Ajouter un rôle (membres autorisés seulement).";
+exports.usage = ";member <@Membre>";
+
 exports.run = (client, message, args) => {
 	if (!client.settings.rolesAllowedToValidateAMember.includes(message.member.roles.highest.id)) {
 		message.channel.send(

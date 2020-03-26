@@ -1,5 +1,8 @@
 const Discord = require("discord.js");
 
+exports.help = "Sert à suggérer une idée (à utiliser dans le salon suggestions)."
+exports.usage = ";suggestion <message>"
+
 exports.run = (client, message, args) => {
 	if (message.channel.id !== client.settings.suggestionChannel) {
 		message.channel.send(
